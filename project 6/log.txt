@@ -1,0 +1,7 @@
+ESTIMATE of time to complete assignment: 12 hours
+TOTAL time actually spent on the assignment: 9 hours
+
+DISCUSSION
+I spent lots of time determining which data structure to use in order to meet the time bound. finally I decided to use a combination of hash table and linked list instead of the adjacency matrix provided officially since I found it inefficient in finding all neighbors.
+I spent lots of time considering how to control the time bound of undigraph_common_neighbors, that is to find common components in two unsorted linked lists. After searching on google, I came up with the idea to build a small helper has table to deal with it.
+When copying and pasting code, I forgot to change the name of lots of variables, which leads to serious consequences afterwards.

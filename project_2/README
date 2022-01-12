@@ -5,8 +5,10 @@ to use strings
 to use arrays
 to use files
 to use a provided library
+
 Introduction
 The Travelling Salesperson Problem is the problem of, given a list of locations and the distances between every pair of them, determining the shortest tour that starts and ends at the same city and visits each other city exactly once. It is a very common problem in logistics: consider, for example, a delivery driver who needs to make stops at a list of 50 addresses and wants to minimize fuel use along the way.
+
 Assignment
 Write a program called TSP that produces tours of cities by applying various heuristic algorithms. The hope is that the result of those heuristics is something reasonably close to the shortest possible tour, which is very time consuming to find. The name of the file containing the cities and their locations, and which algorithms to use to calculate the routes will be given as command-line arguments. For each algorithm, the program should output the algorithm used, the total distance of the resulting route, and the order of the cities in the route produced by the algorithm (see below for the exact format).
 

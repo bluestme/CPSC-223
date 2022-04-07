@@ -7,8 +7,6 @@ to use opaque structs
 
 Introduction
 
-drawing of an atlantic bluefish tuna
-Public domain image from Wikimedia
 Many species of fish have been overfished, threatening their ecosystems and causing economic hardship to the communities that rely on them. International agreements to limit fishing have allowed some fisheries to recover, but illegal fishing remains a problem. Global Fishing Watch monitors the global commercial fishing fleet in near real-time, receiving signals from beacons on the vessels it monitors and recording a GPS track. As the vessels move around the globe, different receivers may record different parts of the track for a particular vessel. For complete analysis, the different track segments received by different receivers must be combined into a single complete track. Once the track has been combined, we can perform further analysis, for example comparing two tracks from different vessels to determine their closest approach to each other – two vessels that have a very close approach may warrant further investigation for transferring illegal catch from one vessel to another.
 
 Details of the project: https://zoo.cs.yale.edu/classes/cs223/f2021/Assignments/gps.html

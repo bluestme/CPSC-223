@@ -1,0 +1,27 @@
+Programming Project 1: C Statement Counter
+Objectives
+to learn C syntax
+to implement a finite state machine
+to use C I/O functions
+Introduction
+To paraphrase a former student, computer science faculty like to flex about how few lines of code they wrote to solve the same problems they've assigned to their students. Beyond that, a line count is a simple but useful tool that can be used to measure code complexity and effort.
+
+But what is a "line of code" and how do you count them? The Unix wc utility will count lines of text in a file, but the same code could be formatted and commented in different ways with different line counts. For example, wc reports 1 line for the following code excerpt,
+
+  if (species == WAVYLEAF_BASKETBRASS) activate_sprayer(CLETHODIM);
+  
+but eight for the following equivalent code.
+    /* check what species was recognized by the neural network */
+    if (species == WAVYLEAF_BASKETGRASS)
+    {
+      /* activate the Clethodim spray nozzle; Clethodim is reported as
+         effective by Anna Bowen et al (https://doi.org/10.1017/inp.2020.22) */
+
+      activate_sprayer(CLETHODIM);
+    }
+  
+A better approximation using standard command-line tools is to count the number of lines containing semi-colons (;) and opening braces ({): (grep ";" statements.c; grep "{" statements.c) | wc -l. This will count each statement, since each statement in C ends with a semi-colon, and will count other things that many would want to include in "lines of code", such as loop and function headers – as long as no line contains both a semi-colon and an opening brace (such lines are counted twice by the command given above). But it will also count semi-colons and opening braces that are enclosed in comments and literals, which is probably not what we want when counting "lines of code".
+
+For this assignment, you will write a C program that does somewhat better than the approximation given above: your program will count each semi-colon and opening brace, except for ocurrences of those two characters that are inside a comment, a string or character literal, or parentheses. (Note that the last requirement is so headers of for loops are counted at most once, and that this specification is still not perfect, but we will stick with it for this assignment.)
+
+Details of the assignment: https://zoo.cs.yale.edu/classes/cs223/f2021/Assignments/statements.html

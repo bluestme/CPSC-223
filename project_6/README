@@ -1,0 +1,11 @@
+Assignment 6: Analyzing a Social Network
+
+Objectives
+to implement breadth-first search
+
+Introduction
+Social networks are complex, data-rich entities in which many different fields, ranging from anthropology to biology, take special interest. Their study and use are truly staggering—you've probably engaged with a service within the past hour that leverages, in some way, information gleaned from a digital implementation of such an entity (possibly for the service's profit). In this assignment, we'll be modeling a social network using an undirected graph, which is a type of graph for which associativity is the defining relationship between entities––not directionality. More specifically, we'll be probing two different queries:
+to which degree one member of the social network is separated from another
+the identities of the mutual points of connection (i.e. names of friends) that exist between two members.
+
+Details of the project: https://zoo.cs.yale.edu/classes/cs223/f2021/Assignments/friends.html
